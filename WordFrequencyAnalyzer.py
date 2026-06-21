@@ -31,7 +31,7 @@ def display_count_data(words, count):
     sorted_list = sorted(count.items(), key = lambda item: item[1], reverse = True)
 
     for word, frequency in sorted_list: 
-        print(f"{word:<15}: {frequency}")
+        print(f"{word:<10}: {frequency}")
 
     print("Total words: ", len(words))
     print("Unique words: ", len(count))
